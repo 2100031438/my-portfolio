@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PORTFOLIO WEBSITE</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+        .navbar {
+            background-color: #2c3e50;
+            /* overflow: hidden; */
+        }
+        .navbar a {
+            display: block;
+            float: left;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 10px 10px;
+            text-decoration: none;
+            font-size: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #0f0fdb;
+            color: #f5f0f0;
+        }
+        .active-link {
+            background-color: #0f0fdb;
+            color: white;
+        }
+        .dropdown {
+            float: left;
+        }
+        .dropdown .dropbtn {
+            border: none;
+            color: #ecf0f1;
+            padding: 10px 10px;
+            background-color: #2c3e50;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dropdown .dropbtn:hover {
+            background-color: #0f0fdb;
+            color: #ecf0f1;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #34495e;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        .dropdown-content a {
+            float: none;
+            color: #ecf0f1;
+            padding: 10px 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dropdown-content a:hover {
+            background-color: #111fda;
+            color: white;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        } 
+        .sub-dropdown {
+            position: relative;
+        }
+        .sub-dropdown-content {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            background-color: #34495e;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .sub-dropdown:hover .sub-dropdown-content {
+            display: block;
+        } 
+              
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="active-link">JULURU DHANUSH</a>
+        <a href="https://drive.google.com/file/d/1Z5qFLGzVRSkfgr4ckGElxTycCgwpqTuD/view?usp=sharing" target="blank">RESUME</a>
+        <a href="https://www.linkedin.com/in/juluru-dhanush/details/education/" target="blank">EDUCATION</a>
+        <div class="dropdown">
+            <button class="dropbtn" ><a href="#certifications">CERTIFICATIONS</a>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://www.credly.com/badges/f9f41430-41e8-4399-974c-45532f787554/public_url" target="blank">AWS-Cp</a>
+                <a href="https://www.linkedin.com/posts/activity-7148304862777098240-h22H?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1VbUQBrNOEMy0QnsvJhTPAx2HK2zpikvE" target="blank">Oracle Cloud </a>
+                <a href="https://www.linkedin.com/posts/activity-7255211915826626560-8jpp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1VbUQBrNOEMy0QnsvJhTPAx2HK2zpikvE" target="blank">Salesforce </a>
+                <a href="https://www.linkedin.com/posts/activity-7206621258074005506-JXbx?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1VbUQBrNOEMy0QnsvJhTPAx2HK2zpikvE" target="blank">RPA </a>
+                <a href="https://www.linkedin.com/posts/activity-7255211915826626560-8jpp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1VbUQBrNOEMy0QnsvJhTPAx2HK2zpikvE" target="blank">Aviatrix ACE Cloud Networking </a>
+                <a href="https://www.linkedin.com/posts/activity-7102928600546365440-iiTM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1VbUQBrNOEMy0QnsvJhTPAx2HK2zpikvE" target="blank">Ai-900</a>
+                <a href="https://www.linkedin.com/posts/activity-7148297764756439041-rfi8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1VbUQBrNOEMy0QnsvJhTPAx2HK2zpikvE" target="blank">Redhat</a>
+                <a href="https://www.linkedin.com/posts/activity-7206576477503463426-tbLQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1VbUQBrNOEMy0QnsvJhTPAx2HK2zpikvE" target="blank">Servicenow</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="#PROJECT">PROJECTS</a>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="https://github.com/2100031438/21TS3108AJFSDCLUSTER55089" target="blank">JFSD</a>
+                <a href="https://github.com/2100031438/TTH-pfsdproject-" target="blank">PFSD</a>
+                <a href="https://github.com/2100031438/MERNSTACKWEBDEVELOPMENT" target="blank">MERN</a>
+                <a href="https://drive.google.com/file/d/18JKFSzcoME0sx0rX5ipnxky8n7BsVQnD/view?usp=sharing" target="blank">RESEARCH PAPER</a>
+                <div class="sub-dropdown">
+                    <a href="#">BLOGS &raquo;</a>
+                    <div class="sub-dropdown-content">
+                        <a href="https://438blog-chiranjivis.netlify.app/" target="blank">CHIRANJIVULLU</a>
+                        <a href="https://438blog-dattaparampara.netlify.app/" target="blank">DATTA PARAMPARA</a>
+                        <a href="https://438blog-guruparampara.netlify.app/" target="blank">GURU PARAMPARA</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="#INTERNSHIP">INTERNSHIPS</a>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="juniper.pdf" target="blank">JUNIPER </a>
+                <a href="virtual intership.pdf" target="blank">AICTE-Networking</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="#">TECHNOLOGIES</a>
+                <i class="fa fa-caret-down"></i>
+                
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Cybersecurity</a>
+                <a href="#"> Digital Forencies</a>
+                <a href="#"> AI/ML</a>
+                <a href="#"> SQL</a>
+                <a href="#"> DATA ANALYTICS</a>
+                <a href="#"> DSA</a>
+                <a href="#"> JAVA Programming</a>
+            </div>
+        </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="#">REAL-TIME PROJECTS</a>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">English</a>
+                <a href="#"> Telugu</a>
+                <a href="#"> Hindi</a>
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><a href="#CONTACT">CONTACT</a>
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <!-- <div class="dropdown-content">
+               
+            </div> -->
+        </div>
+        <!-- <marquee direction="right" scrollamount="9.5"><a href="#">Gmail ID : 2100031438cseh@gmail.com</a></marquee> -->
+    </nav>
+    <br>
+
+    <main class="d-flex justify-content-center" ><img src="profile.jpg" width="350px" height="350px"  border="5"></main>
+    <br>
+ <!-- EDUCATION-->
+  <SECTION ID="education">
+     <h1 style="color: #9c27b0; display: flex; flex-direction: row; justify-content: center; padding-top: 12px;">EDUCATION</h1>
+    <div class="card-group">
+  <div class="card">
+    <img src="sc.png" style="height: 400px"  class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">SRI CHAITANYA TECHNO SCHOOL</h5>
+      <p class="card-text">Completed secondary education with a strong academic foundation, focusing on core subjects like Mathematics, Science, and English.</p>
+      <p class="card-text"><small class="text-muted">2018-2019</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="narayana.avif"  style="height: 400px" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">NARAYANA JUNIOR COLLEGE </h5>
+      <p class="card-text">Pursued intermediate education in the MPC stream (Maths, Physics, Chemistry), emphasizing conceptual understanding and preparation for competitive exams like JEE and EAMCET.</p>
+      <p class="card-text"><small class="text-muted">2019-2021</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="klu.jpg"  style="height: 400px" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">KL University </h5>
+      <p class="card-text">Currently pursuing a Bachelor's CSE-Honours degree with a specialization in Cybersecurity  gaining skills in technical subjects, projects, and industry-relevant training.</p>
+      <p class="card-text"><small class="text-muted">2021-2025</small></p>
+    </div>
+  </div>
+</div>
+  </SECTION>
+   <!-- EDUCATION-->
+<!-- certifications -->
+     <section id="certifications">
+      <h1 style="color: #9c27b0; display: flex; flex-direction: row; justify-content: center; padding-top: 12px;">CERTIFICATIONS</h1>
+      <div class="container" style="display: flex; flex-direction: row; justify-content: space-evenly;">
+         <div>
+          <div class="card" style="width: 18rem;">
+            <img src="aws.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">AWS Certified Cloud Practitioner</h5>
+              <p class="card-text">Successfully earned the AWS Certified Cloud Practitioner certification, validating foundational knowledge of AWS Cloud concepts, global infrastructure, and core services. Demonstrates understanding of cloud economics, billing and pricing models, and AWS security and compliance principles. Equipped to articulate the value of AWS Cloud and assist in cloud adoption across business and technical teams.
+
+</p>
+              <a href="AWS Certified Cloud Practitioner certificate 31438.pdf" class="btn btn-primary" target="blank">Click Here to view Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card" style="width: 17rem;">
+            <img src="SERVICENOW.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ServiceNow Certified System Administrator  – (CSA)</h5>
+              <p class="card-text">Successfully earned the ServiceNow Certified System Administrator (CSA) certification, validating a strong foundation in ServiceNow platform administration and configuration. Demonstrates expertise in managing core platform capabilities, including user and data management, workflows, access control, and service automation. Proficient in configuring and maintaining ServiceNow modules. </p>
+              <a href="2100031438CSA.pdf" target="blank"class="btn btn-primary">Click Here to view Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card" style="width: 18rem;">
+            <img src="REDHAT.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Hat Certified Enterprise Application Developer</h5>
+              <p class="card-text">Successfully earned the Red Hat Certified Enterprise Application Developer certification, validating expertise in Java Enterprise Edition (JEE) development. Skilled in building, deploying, and maintaining enterprise applications using Red Hat JBoss® EAP. Proficient in RESTful web services, 
+              JSON processing, and security configurations, with a strong focus on enterprise-grade application development.</p>
+              <a href="RedHatCertified_Enterprise_Application_Developer_Badge20231231-29-b6xq9k.pdf" target="blank" class="btn btn-primary">Click Here to view Certificate</a>
+            </div>
+          </div>
+        </div>
+         <div>
+          <div class="card" style="width: 18rem;">
+            <img src="ORACLE.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Oracle Cloud Infrastructure Certified Architect Associate</h5>
+              <p class="card-text">Successfully earned the Oracle Cloud Infrastructure (OCI) Certified Architect Associate certification, validating foundational expertise in designing and deploying scalable, secure, and highly available infrastructure on Oracle Cloud. Demonstrates proficiency in OCI core services including compute, networking, storage, and database, as well as identity and access management, security, and cost management.
+
+</p>
+              <a href="oracle.pdf" target="blank" class="btn btn-primary">Click Here to view Certificate</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card" style="width: 18rem;">
+            <img src="Screenshot 2025-06-01 115808.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Microsoft Certified: Azure AI Fundamentals (AI-900)</h5>
+              <p class="card-text">Successfully earned the Azure AI Fundamentals (AI-900) certification, demonstrating foundational knowledge of artificial intelligence (AI) and machine learning (ML) concepts and services within Microsoft Azure. Proficient in identifying common AI workloads, responsible AI principles, and Azure services related to vision, language, and conversational AI.Capable of supporting AI solutions and collaborating with data science .</p>
+              <a href="ai900_rotated.pdf" target="blank" class="btn btn-primary">Click Here to view Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- certifications -->
+ <hr>
+
+ <!-- PROJECT -->
+<section id="PROJECT">
+      <h1 style="color: #9c27b0; display: flex; flex-direction: row; justify-content: center; padding-top: 12px;">PROJECTS</h1>
+      <div class="container">
+        <div class="row m-5">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <h5 style="color: #121fd9;">SDP-03: Service Management System <A style="color: #da0808;" href="https://www.linkedin.com/pulse/sdp-06-service-management-system-juluru-dhanush-?trackingId=IkfD%2F1x4RVyjp7nG5QL7BA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BNeC0XQiAQqiTROsB1dAehw%3D%3D" target="blank">link</A> </h5>
+            
+            <p>The Service Management System is a digital platform designed to manage and streamline the complete lifecycle of service requests, scheduling, technician assignments, progress tracking, and customer feedback. The system is aimed at businesses that offer repair, installation, maintenance, or customer support services across various domains such as automobile servicing, IT hardware maintenance, home appliance repairs, etc.
+This project helps eliminate manual record-keeping, improves service quality, optimizes resource allocation, and ensures faster response times.</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <img src="JFSD.png" alt="12" width="100%">
+          </div>
+        </div>
+              <div class="container">
+        <div class="row m-5">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <h5 style="color: #121fd9;">SDP-02: TRAVEL, TOURISM &HOSPITALILY SYSTEM  <A style="color: #da0808;" href="https://www.linkedin.com/pulse/travel-tourism-hospitalily-system-cluster02team08-juluru-dhanush-?trackingId=IkfD%2F1x4RVyjp7nG5QL7BA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BNeC0XQiAQqiTROsB1dAehw%3D%3D" target="blank">link</A></h5>
+            <p>The Travel, Tourism & Hospitality Management System is an integrated digital platform designed to provide a seamless experience for tourists, travel agencies, and hospitality service providers. This system streamlines the booking of travel packages, hotel reservations, tour planning, and customer service, offering a one-stop solution for managing all aspects of travel and hospitality.
+
+The project aims to digitize and simplify the process of trip planning, accommodation booking, transportation coordination, and itinerary management while enhancing user experience and operational efficiency.</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <img src="pfsd.jpg" alt="12" width="100%">
+          </div>
+        </div>
+        <div class="row m-5">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <h5 style="color: #121fd9;">SDP-01: AUTOMOBILE SYSTEM <A style="color: #da0808;" href="https://www.linkedin.com/pulse/automobile-system-juluru-dhanush-?trackingId=IkfD%2F1x4RVyjp7nG5QL7BA%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BNeC0XQiAQqiTROsB1dAehw%3D%3D" target="blank">link</A></h5>
+            <p>The Automobile Management System is designed to streamline the management, monitoring, and maintenance of vehicles using a digital platform. It automates tasks such as vehicle registration, service tracking, fuel monitoring, and user management, aiming to enhance operational efficiency, reduce manual errors, and provide real-time insights into automobile status.
+
+This system can be developed as a web or desktop application and can be used by automobile showrooms, rental services, or individual vehicle owners to maintain a comprehensive digital log of their automobiles.</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <img src="mern.jpg" alt="12" width="100%">
+          </div>
+        </div>
+      </div>
+    </section>
+ <!-- PROJECT -->
+    <hr>  <hr><br>
+<!-- INTERNSHIP-->
+ <section id="INTERNSHIP">
+   <h1 style="color: #9c27b0; display: flex; flex-direction: row; justify-content: center; padding-top: 12px;">INTERNSHIPS</h1>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Juniper Associate (JNCIA­Junos)</h5>
+        <p class="card-text">The Junos, Associate (JNCIA-Junos) is an entry-level certification offered by Juniper Networks, designed for networking professionals who are new to Juniper technologies and the Junos OS (Operating System). The certification validates a basic understanding of networking fundamentals, as well as core concepts specific to Junos devices.</p>
+        <a href="juniper.pdf" class="btn btn-primary" target="_blank">VERITY</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">AICTE Networks Networking Internship</h5>
+        <p class="card-text">The AICTE Virtual Internship in Networking is a project-based, fully online training program designed for engineering and diploma students interested in building practical skills in computer networks, network administration, and cybersecurity. Offered in collaboration with industry partners like Cisco Networking Academy and Eduskills. </p>
+        <a href="virtual intership.pdf" class="btn btn-primary" target="_blank">VERITY</a>
+      </div>
+    </div>
+  </div>
+</div>
+ </section>
+   <hr>  <hr><br>
+<!-- INTERNSHIP-->
+  <h1 style="color: #9c27b0; display: flex; flex-direction: row; justify-content: center; padding-top: 12px;">CONTACT</h1>
+   <!-- map -->
+  <div id="map">         
+  <iframe style="justify-content: center";  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448590.78730315616!2d78.07838586924265!3d17.412077907948387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e1!3m2!1sen!2sin!4v1748841514832!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </div>
+ <!-- map -->
+  <!-- CONTACT-->
+   <br>
+   <section id="CONTACT" style=" background-color: #2c3e50; justify-content: center">
+    <footer >
+  <address id="address">
+  <br>
+     <a href="2100031438cseh@gmail.com" target="_blank">Gmail</a>
+    <a href="https://github.com/2100031438?tab=repositories" target="_blank">GitHub</a>
+    <a href="mailto:support@example.com" target="_blank">Resume</a>
+    <a href="https://leetcode.com/u/2100031438/" target="_blank">LeetCode</a>
+    <a href="mailto:support@example.com" target="_blank">CodeChef</a>
+    <a href="mailto:support@example.com" target="_blank">LinkedIn</a>
+    <a href="mailto:support@example.com" target="_blank">HackerRank</a>
+      HYDERABAD,<br>
+    TELANGANA, INDIA<br>
+    
+    Phone:7396781728<br>
+  </address>
+<style>
+  #map
+  {
+    justify-content: center;
+    display: flex;
+  }
+  #address
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ecf0f1;
+  }
+</style>
+ </section>
+</footer>
+</body>
+</html>
+
+
